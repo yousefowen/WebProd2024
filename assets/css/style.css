@@ -1,0 +1,49 @@
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body{
+  background-image: url("././assets/images/Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  
+  ul{
+    list-style-type:none;
+  }
+  .container{
+    width:50%;
+    animation: slide 2s ease-in-out;
+  }
+  @keyframes slide{
+    0%{ transform:translateX(0px) }
+    25%{ transform:translateX(-1900px) }
+    50%{ transform:translateX(200) }
+    75%{ transform:translateX(-100px)  }
+    85%{ transform:translateX(100px)  }
+    90%{ transform:translateX(0px) }
+    95%{ transform:translateX(20px) }
+    100%{ transform:translateX(0px) }
+  }
+
+  /* @keyframes slide {
+    0% {
+      transform: scale(0);
+    }
+    50%{
+      transform: scale(1.2);
+    }
+    100%{
+      transform: scale(1);
+    } */
+  /* } */
+
+  .splide__slide {
+    opacity: 0.6;
+  }
+  
+  .splide__slide.is-active {
+    opacity: 1;
+  }

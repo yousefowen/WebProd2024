@@ -1,0 +1,24 @@
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body{
+  background-image: url("././assets/images/Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  ul{
+    list-style-type:none;
+  }
+  .container{
+    width:50%;
+  }
+  .splide__slide {
+    opacity: 0.6;
+  }
+  
+  .splide__slide.is-active {
+    opacity: 1;
+  }
