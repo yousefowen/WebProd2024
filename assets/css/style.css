@@ -46,8 +46,6 @@ body{
   .splide__slide {
     opacity: 0.5;
     transition: opacity 0.5s ease;
-
-    
   }
   
   .splide__slide.is-active {
