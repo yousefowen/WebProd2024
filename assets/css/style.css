@@ -2,6 +2,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  animation:alternate ;
+
+
 }
 body{
   background-image: url("././assets/images/Background.jpg");
@@ -9,12 +12,20 @@ body{
   background-repeat: no-repeat;
   background-position: center;
 }
-  
+  .other{
+    width:65%;
+    animation: scale 2s ease-in-out;
+  } 
+  @keyframes scale{
+    0%{transform: scale(0);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+  }
   ul{
     list-style-type:none;
   }
   .container{
-    width:50%;
+    width:65%;
     animation: slide 2s ease-in-out;
   }
   @keyframes slide{
@@ -22,28 +33,24 @@ body{
     25%{ transform:translateX(-1900px) }
     50%{ transform:translateX(200) }
     75%{ transform:translateX(-100px)  }
-    85%{ transform:translateX(100px)  }
+    85%{ transform:translateX(200px)  }
     90%{ transform:translateX(0px) }
-    95%{ transform:translateX(20px) }
+    95%{ transform:translateX(100px) }
     100%{ transform:translateX(0px) }
   }
+  .container_thumbnail{
+    width:65%;
+    animation: slide 2s ease-in-out;
 
-  /* @keyframes slide {
-    0% {
-      transform: scale(0);
-    }
-    50%{
-      transform: scale(1.2);
-    }
-    100%{
-      transform: scale(1);
-    } */
-  /* } */
-
+  }
   .splide__slide {
-    opacity: 0.6;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+
+    
   }
   
   .splide__slide.is-active {
     opacity: 1;
   }
+  

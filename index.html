@@ -39,8 +39,8 @@
           </ul>
         </div>
       </section>
-    </div>
-    <div class="container">
+    </div><center>
+    <div class="container_thumbnail">
       <section
       id="Thumbnail-carousel"
       class="splide"
@@ -67,6 +67,7 @@
             <img src="././assets/images/Bristleback_icon.webp" alt="">
           </li>
         </ul>
+      </center>
       </div>
     </section>
     </div>
@@ -83,16 +84,16 @@
   } );
 
   var thumbnails = new Splide( '#Thumbnail-carousel', {
-    fixedWidth  : 100,
-    fixedHeight : 60,
+    fixedWidth  : 155,
+    fixedHeight : 100,
     gap         : 10,
     rewind      : true,
     pagination  : false,
-    isNavigation: true,
+    isNavigation: true, 
     breakpoints : {
       600: {
-        fixedWidth : 60,
-        fixedHeight: 44,
+        fixedWidth : 155,
+        fixedHeight: 100,
       },
     },
   } );
